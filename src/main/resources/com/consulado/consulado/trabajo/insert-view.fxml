@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.consulado.consulado.controllers.trabajo.InsertViewController">
+    <MenuBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="600.0">
+        <Menu mnemonicParsing="false" text="Atras" />
+    </MenuBar>
+   <VBox layoutX="14.0" layoutY="36.0" prefHeight="353.0" prefWidth="578.0">
+      <Label alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="50.0" text="Codigo">
+         <graphic>
+            <TextField fx:id="codigoField" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="50.0" text="Nombre">
+         <graphic>
+            <TextField fx:id="nombreField" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="50.0" text="Pasaporte">
+         <graphic>
+            <TextField fx:id="pasaporteField" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="50.0" text="Fecha Viaje">
+         <graphic>
+            <TextField fx:id="fechaViajeField" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="50.0" text="Semanas">
+         <graphic>
+            <TextField fx:id="semanasField" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="50.0" text="Motivo">
+         <graphic>
+            <TextArea fx:id="motivoField" prefHeight="86.0" prefWidth="200.0" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="50.0" text="Entidad Contratadora">
+         <graphic>
+            <TextField fx:id="entidadContratadoraField" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="50.0" text="Tipo de Trabajo">
+         <graphic>
+            <TextField fx:id="tipoTrabajoField" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="50.0" text="Tarifa por Horas">
+         <graphic>
+            <TextField fx:id="tarifaHorasField" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="50.0" text="Horas Laborables">
+         <graphic>
+            <TextField fx:id="horasLaborablesField" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" text="Agregar Trabajo" onAction="#InsertNewTrabajo"/>
+   </VBox>
+</Pane>
