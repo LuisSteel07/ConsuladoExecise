@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          vgap="15"
+          hgap="10"
+          fx:controller="com.consulado.consulado.controllers.trabajo.DeleteViewController"
+          prefHeight="400.0" prefWidth="600.0">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Button onAction="#goBack" text="Back" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+
+    <Label fx:id="message" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+
+    <Label text="Codigo" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+    <TextField fx:id="codigoField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Button onAction="#DeleteTrabajo" text="Agregar Trabajo" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+</GridPane>

@@ -21,11 +21,13 @@
         <Menu mnemonicParsing="false" text="Turista">
             <MenuItem mnemonicParsing="false" text="Insertar"/>
             <MenuItem mnemonicParsing="false" text="Eliminar"/>
+            <MenuItem mnemonicParsing="false" text="Actualizar"/>
             <MenuItem mnemonicParsing="false" text="Buscar"/>
         </Menu>
         <Menu mnemonicParsing="false" text="Trabajo">
             <MenuItem mnemonicParsing="false" text="Insertar" onAction="#goToInsertTrabajo"/>
-            <MenuItem mnemonicParsing="false" text="Eliminar"/>
+            <MenuItem mnemonicParsing="false" text="Eliminar" onAction="#goToDeleteTrabajo"/>
+            <MenuItem mnemonicParsing="false" text="Actualizar"/>
             <MenuItem mnemonicParsing="false" text="Buscar"/>
         </Menu>
     </MenuBar>

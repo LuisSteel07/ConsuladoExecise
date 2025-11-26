@@ -5,6 +5,7 @@ import com.consulado.consulado.SceneManager;
 import db.SolicitudesDAO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -43,5 +44,9 @@ public class PrincipalViewController {
 
     public void goToInsertTrabajo() {
         SceneManager.changeScene("trabajo/insert-view.fxml", "Insertando Nueva Visa Trabajo");
+    }
+
+    public void goToDeleteTrabajo() {
+        SceneManager.changeScene("trabajo/delete-view.fxml", "Eliminar Visa Trabajo");
     }
 }
