@@ -1,8 +1,10 @@
 package com.consulado.consulado.controllers.trabajo;
 
 import clases.Trabajo;
+import com.consulado.consulado.SceneManager;
 import com.consulado.consulado.controllers.SolicitudController;
 import db.TrabajoDAO;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -30,5 +32,9 @@ public class InsertViewController extends SolicitudController {
                 Integer.parseInt(horasLaborablesField.getText()));
 
         TrabajoDAO.insert(trabajo);
+    }
+
+    public void goBack() {
+        SceneManager.changeScene("principal-view.fxml", "Principal View");
     }
 }

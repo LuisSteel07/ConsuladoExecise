@@ -5,13 +5,19 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-      prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.consulado.consulado.controllers.PrincipalViewController">
-    <MenuBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0"
-             prefWidth="600.0">
+<?import javafx.geometry.Insets?>
+<GridPane hgap="10" vgap="15"
+          prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.consulado.consulado.controllers.PrincipalViewController">
+    <padding>
+        <Insets left="20" right="20" />
+    </padding>
+
+    <MenuBar prefHeight="25.0"
+             prefWidth="600.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
         <Menu mnemonicParsing="false" text="Turista">
             <MenuItem mnemonicParsing="false" text="Insertar"/>
             <MenuItem mnemonicParsing="false" text="Eliminar"/>
@@ -22,10 +28,9 @@
             <MenuItem mnemonicParsing="false" text="Eliminar"/>
             <MenuItem mnemonicParsing="false" text="Buscar"/>
         </Menu>
-        <Menu mnemonicParsing="false" text="Calculadora" />
-        <Menu mnemonicParsing="false" text="Valores" />
     </MenuBar>
-    <TableView fx:id="tableSolicitudes" layoutX="14.0" layoutY="49.0" prefHeight="334.0" prefWidth="575.0">
+
+    <TableView fx:id="tableSolicitudes" GridPane.columnIndex="0" GridPane.rowIndex="1">
         <columns>
             <TableColumn fx:id="codigoCol" prefWidth="74.0" text="Código"/>
             <TableColumn fx:id="nombreCol" prefWidth="85.33328247070312" text="Nombre"/>
@@ -33,7 +38,11 @@
             <TableColumn fx:id="fechaViajeCol" prefWidth="124.6666259765625" text="Fecha de Viaje"/>
             <TableColumn fx:id="semanasCol" prefWidth="90.66668701171875" text="Semanas"/>
             <TableColumn fx:id="motivoCol" prefWidth="77.33334350585938" text="Motivo"/>
-            <TableColumn fx:id="visaCol" prefWidth="77.33334350585938" text="Visa"/>
         </columns>
     </TableView>
-</Pane>
+
+    <GridPane hgap="10" vgap="15" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <Button text="Calculadora" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <Button text="Valores" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    </GridPane>
+</GridPane>

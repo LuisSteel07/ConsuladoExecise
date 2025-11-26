@@ -5,7 +5,6 @@ import com.consulado.consulado.SceneManager;
 import db.SolicitudesDAO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -29,8 +28,6 @@ public class PrincipalViewController {
     private TableColumn<Solicitud, Integer> semanasCol;
     @FXML
     private TableColumn<Solicitud, String> motivoCol;
-    @FXML
-    private TableColumn<Solicitud, String> visaCol;
 
     public void initialize() throws SQLException {
         codigoCol.setCellValueFactory(new PropertyValueFactory<>("Codigo"));
@@ -39,7 +36,6 @@ public class PrincipalViewController {
         fechaViajeCol.setCellValueFactory(new PropertyValueFactory<>("FechaViaje"));
         semanasCol.setCellValueFactory(new PropertyValueFactory<>("Semanas"));
         motivoCol.setCellValueFactory(new PropertyValueFactory<>("Motivo"));
-        visaCol.setCellValueFactory(new PropertyValueFactory<>("Visa"));
 
         ObservableList<Solicitud> solicitudes = FXCollections.observableList(SolicitudesDAO.listAll());
         tableSolicitudes.setItems(solicitudes);
